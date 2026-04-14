@@ -30,3 +30,5 @@ public:
         }
     }
 };
+
+The problem gives us three different numbers: 0, 1, and 2. These numbers represent the colors and they're given to us in an array. Our approach to the problem was to do a count sort. We first initialized three different counters for each number (zerocount, onecount, twocount). Then we iterated through the array and counted how many instances of each integer appeared. After we had that, we changed the original nums array. We started at index 0 and began replacing the numbers in the original array (i.e, if original array was [1, 0], it would rewrite the "1" to a 0), and then we did that for each number in order of zero, one, two. This wouldn't change the size of the array since all the counts add up to the size of the array.
